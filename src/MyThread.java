@@ -14,8 +14,8 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i <= count-1; i++) {
-            if (fibonachi.size() <= i) {
+        for (int i = 0; i < count; i++) {
+            if (fibonachi.size() == i) {
                 fibonachi.add(fibonachi.get(i-1) + fibonachi.get(i-2));
             }
             System.out.print(" " + fibonachi.get(i));
